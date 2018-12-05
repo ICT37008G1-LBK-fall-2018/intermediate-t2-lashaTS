@@ -2,9 +2,7 @@ let btn = document.querySelector('#highlight-product'),
     modal = document.querySelector('#modal');
 
 
-btn.addEventListener('click' , getColorById);
-
-function getColorById(){
+btn.onclick = function(){
 
     let color = modal.firstElementChild.value,
         ID = modal.lastElementChild.value,
